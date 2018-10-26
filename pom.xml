@@ -25,7 +25,6 @@
         <module>spring-cloud-feign</module>
     </modules>
 
-    <!-- 覆盖spring-boot-starter-parent默认属性 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -52,8 +51,7 @@
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
                 <!-- type为pom，scope为import 表示继承spring-cloud 从而可以在本pom文件中指定依赖或者
-                    在子模块中指定，所以这两个不能删除
-                -->
+                    在子模块中指定，所以这两个不能删除 -->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
