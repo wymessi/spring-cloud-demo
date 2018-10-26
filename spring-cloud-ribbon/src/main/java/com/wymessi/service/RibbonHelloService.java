@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class HelloService {
+public class RibbonHelloService {
 
     @Autowired
     private RestTemplate restTemplate;
 
-    private Logger logger = LogManager.getLogger(HelloService.class);
+    private Logger logger = LogManager.getLogger(RibbonHelloService.class);
 
     public String helloService(String name) {
         logger.info("开始调用pring-cloud-eureka-producer提供的hello服务");
