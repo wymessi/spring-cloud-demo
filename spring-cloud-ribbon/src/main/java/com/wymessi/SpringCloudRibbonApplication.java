@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableHystrix
+@EnableHystrix //开启熔断机制
 public class SpringCloudRibbonApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringCloudRibbonApplication.class, args);
