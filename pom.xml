@@ -23,6 +23,7 @@
         <module>spring-cloud-eureka-producer</module>
         <module>spring-cloud-ribbon</module>
         <module>spring-cloud-feign</module>
+        <module>spring-cloud-zuul</module>
     </modules>
 
     <properties>
