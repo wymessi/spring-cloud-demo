@@ -22,6 +22,6 @@ public class RibbonHelloService {
 }
     public String helloError(String name) {
         logger.error("服务不可用，熔断机制生效");
-        return String.format("hello %s, sorry, this is a error", name);
+        return String.format("hello %s, sorry, this is a error  Hystrix from ribbon", name);
     }
 }
