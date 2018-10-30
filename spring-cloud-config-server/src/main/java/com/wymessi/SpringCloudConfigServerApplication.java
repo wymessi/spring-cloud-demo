@@ -7,7 +7,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableConfigServer
+@EnableConfigServer //开启配置中心
 public class SpringCloudConfigServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringCloudConfigServerApplication.class, args);
