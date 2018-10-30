@@ -20,4 +20,10 @@ public class ProducerHelloController {
         logger.info("开始提供hello服务");
         return "hello " + name + " ,i am from port:" + port;
     }
+
+    @RequestMapping("/hello/zipkin")
+    public String helloZipkin() {
+        logger.info("开始提供helloZipkin服务");
+        return "hello this is a test for zipkin";
+    }
 }

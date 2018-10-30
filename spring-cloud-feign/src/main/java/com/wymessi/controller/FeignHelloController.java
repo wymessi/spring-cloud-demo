@@ -21,4 +21,6 @@ public class FeignHelloController {
         logger.info("开始调用pring-cloud-eureka-producer提供的hello服务");
         return helloService.helloService(name);
     }
+
+
 }

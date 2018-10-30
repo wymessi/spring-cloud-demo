@@ -7,18 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class RibbonHelloController {
+public class RibbonZipkinController {
 
-    @Autowired
-    private RibbonHelloService helloService;
-
-    @GetMapping(value = "/hello")
-    public String hello(@RequestParam String name) {
-        return helloService.helloService( name );
-    }
-
-    @GetMapping(value = "hello/zipkin")
+    @GetMapping(value = "hello/zipkin/name")
     public String helloZipkin() {
-        return helloService.helloZipkin();
+        return "this is a name";
     }
 }

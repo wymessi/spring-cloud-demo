@@ -9,4 +9,5 @@ public class FeignHelloServiceHystrix implements FeignHelloService{
     public String helloService(String name) {
         return String.format("hello %s, sorry, this is a error  Hystrix from Feign", name);
     }
+
 }

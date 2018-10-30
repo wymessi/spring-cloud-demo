@@ -24,4 +24,9 @@ public class RibbonHelloService {
         logger.error("服务不可用，熔断机制生效");
         return String.format("hello %s, sorry, this is a error  Hystrix from ribbon", name);
     }
+
+    public String helloZipkin() {
+        logger.info("开始调用pring-cloud-feign提供的helloZipKin服务");
+        return restTemplate.getForObject("http://spring-cloud-feign/hello/zipkin",String.class);
+    }
 }
