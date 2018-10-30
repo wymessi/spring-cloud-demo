@@ -25,6 +25,7 @@
         <module>spring-cloud-feign</module>
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-config-server</module>
+        <module>spring-cloud-eureka-cluster-server</module>
     </modules>
 
     <properties>
