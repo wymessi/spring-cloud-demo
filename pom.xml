@@ -26,6 +26,7 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-eureka-cluster-server</module>
+        <module>spring-cloud-consul-producer</module>
     </modules>
 
     <properties>
